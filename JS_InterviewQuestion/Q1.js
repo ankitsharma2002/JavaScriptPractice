@@ -1,3 +1,5 @@
+// Can a JavaScript object hold a function as a property? Explain with an example.
+
 const person={
     name:"Ankit",
     age:22,
