@@ -6,9 +6,11 @@ console.log("Start");
 setTimeout(() => {
     console.log("This is second statement");
 }, 2000); // Simulating an asynchronous operation with a delay of 2 seconds
+
+
 console.log("End");
 
-// Output:
+// Output:  
 // Start
 // End
 // This is second statement
