@@ -1,0 +1,26 @@
+// Q3: Apply 10% discount, 
+// filter products < $50, 
+// and sum total of affordable products.
+
+let productPrices = [120, 45, 75, 30, 200, 18, 60];
+
+// Apply 10% discount 
+let discountedPrices = productPrices.map(price => price * 0.9);
+
+// Filter affordable (< $50)
+let affordableProducts = discountedPrices.filter(price => price < 50);
+
+// Sum total of affordable products
+let totalAffordableCost = affordableProducts.reduce((sum, price) => sum + price, 0);
+
+console.log("Discounted Prices:", discountedPrices);
+console.log("Affordable Products:", affordableProducts);
+console.log("Total Affordable Cost:", totalAffordableCost);
+
+/*
+⏱ Time Complexity:
+- map() → O(n)
+- filter() → O(n)
+- reduce() → O(n)
+Overall → O(n)
+*/
